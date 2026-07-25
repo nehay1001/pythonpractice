@@ -1,5 +1,5 @@
-# comment in python
-print("hello world")
-"""
-multi-line comments
-"""
+print("my name is neha")
+print("my age is 20")
+print("my name is neha : ", "my age is 20")
+print(35+35)
+print(35-35)
