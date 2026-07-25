@@ -1,18 +1,14 @@
-# variable 
-name = "neha"
-age = 20
-born = 20.06
-print("My name is", name, "and I am", age, "years old. I was born in", born)
-print(name)
-print(age)
-print(born)
+#print sum 
+a=1000
+b=500 
+sum=a+b
+print(sum)
+diff= a-b
+print(diff)
+print(a*b)
+print(a/b)
+print(a%b)
 
-print(type(name))
-print(type(age))
-print(type(born))
-
-age=23
-old=False
-a=None
-print(type(old))
-print(type(a))
+a=2
+b=5
+print(a**b)
