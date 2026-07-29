@@ -1,25 +1,22 @@
-#relational operators
-a=50
-b=20
-print(a==b)  # False
-print(a!=b)  # True
-print(a>b)   # True
-print(a<b)   # False
-print(a>=b)  # True
-print(a<=b)  # False
+#type conversion
+a=2 
+b=4.25
+sum=a+b#2.0+4.25=6.25
+print(sum)
 
-#assiment operators
-num=10
-num**=5
-print(num)  
+#type casting
+a=int("2")
+b=4.25
+sum=a+b
+print(type(a))
+print(sum)
 
-#logical operators 
-a=50
-b=30
-print(not False)
-print(not a>b)  # False
+a=float("2")
+b=4.25
+sum=a+b
+print(type(a))
+print(sum)
 
-val1=False
-val2=False
-print("and operator:", val1 and val2)
-print("or operator:", val1 or val2)
+a=3.14
+a=str(a)
+print(type(a))
