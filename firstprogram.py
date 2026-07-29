@@ -1,17 +1,14 @@
-#python input
-input("enter your name:")
+
 
 name=input("enter your name:")
-print("hello", name )
+age=input("enter your age:")
+marks=input("enter your marks:")
 
-name=input ("enter your age:")
-print ("you enter :",name)
+print("welcome",name)
+print("enter age=",age)
+print("enter marks=",marks)
 
-val=input("enter some value:")
-print(type(val),val)#"25" "23.29"
-
-val=int(input("enter some value:"))
-print(type(val),val)#25
-
-val=float(input("enter some value:"))
-print(type(val),val)#23.29
+age=int("enter your age:")
+marks=float("enter your marks:")
+print("your age is:",age)
+print("your marks is:",marks)
