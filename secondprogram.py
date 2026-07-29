@@ -1,11 +1,18 @@
-#string
-str1='this is a string'
-str2="this is a string"
-str3='''this is a string'''
+#concatenation
+str1="hello"
+str2="world"
+final=str1+str2
+print(final)
 
-str1="this is string.we are creating in a python."
-print(str1)
-str1="this is string.\nwe are creating in a python."
-print(str1)
-str1="this is string.\twe are creating in a python."
-print(str1)
+str1="neha"
+str2="yadav"
+print(str1+str2)
+
+#length of string
+
+str1="hello"
+print(len(str1))
+str2="world"
+print(len(str2))
+final=str1+" "+str2
+print(len(final))
