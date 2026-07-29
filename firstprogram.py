@@ -1,22 +1,17 @@
-#type conversion
-a=2 
-b=4.25
-sum=a+b#2.0+4.25=6.25
-print(sum)
+#python input
+input("enter your name:")
 
-#type casting
-a=int("2")
-b=4.25
-sum=a+b
-print(type(a))
-print(sum)
+name=input("enter your name:")
+print("hello", name )
 
-a=float("2")
-b=4.25
-sum=a+b
-print(type(a))
-print(sum)
+name=input ("enter your age:")
+print ("you enter :",name)
 
-a=3.14
-a=str(a)
-print(type(a))
+val=input("enter some value:")
+print(type(val),val)#"25" "23.29"
+
+val=int(input("enter some value:"))
+print(type(val),val)#25
+
+val=float(input("enter some value:"))
+print(type(val),val)#23.29
