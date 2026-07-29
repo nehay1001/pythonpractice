@@ -1,18 +1,14 @@
-#concatenation
-str1="hello"
-str2="world"
-final=str1+str2
-print(final)
-
-str1="neha"
-str2="yadav"
-print(str1+str2)
-
-#length of string
-
-str1="hello"
-print(len(str1))
-str2="world"
-print(len(str2))
-final=str1+" "+str2
-print(len(final))
+#indexing
+str="hello world"
+ch=str[0]
+print(ch)
+print(str[1])
+print(str[2])
+print(str[3])
+print(str[4])
+print(str[5])
+print(str[6])
+print(str[7])
+print(str[8])
+print(str[9])
+print(str[10])
