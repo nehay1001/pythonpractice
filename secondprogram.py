@@ -1,19 +1,40 @@
-#slicing
-str="hello world"
-print(str[0:1])#h
-print(str[0:2])#he
-print(str[0:3])#hel
-print(str[0:4])#hell
-print(str[0:5])#hello
-print(str[0:6])#hello
-print(str[0:7])#hello w
-print(str[0:8])#hello wo
-print(str[0:9])#hello wor
-print(str[0:10])#hello worl
-print(str[0:11])#hello world
-print(str[0:12])#hello world
-print(str[1:5])#ello
-print(str[6:11])#world
-print(str[6:])#world
-print(str[:5])#hello
-print(str[5:len(str)])# world
+# slicing /negative indexing
+str="apple"
+print(str[-3:-1])
+print(str[-5:-1])
+print(str[-5:-2])
+
+#string functions
+str="i am studying python from apnacollege"
+print(str.endswith("ege"))  #return true if string end with substr
+print(str.endswith ("app"))
+
+
+str="i am studying python from apnacollege"
+print(str.capitalize())# capitalized first later
+print(str)
+
+print(str.replace("o","a"))#replace all occurance old 
+print(str.replace("python","javascript"))
+
+print(str.find("o"))#return 1st index of 1st occurance
+str="i am from studing python from apnacollege"
+print(str.find("from"))
+print(str.find("q"))
+
+str="i am from studying python from apnacollege"
+print(str.count("from"))
+print(str.count("o"))
+
+
+#practice
+#WAP to input user'first name and print its length
+name=input("enter your name:")
+print("length of your name is",len(name))
+
+#WAP to find the occurance of $ in a string
+str="i have 10$ and this $ i give to how now you count how many $ you have"
+print(str.count("$"))
+
+
+
