@@ -1,51 +1,41 @@
-# list methods
-list=[2,1,3]
-list.append(4)
-print(list)
+#python tuple
+tup=(1,2,3,4,5)# if want to add , is also possible 
+print(type(tup))
+print(tup[0])
+print(tup[2])
+tup[0]=10 #tuple is immutable
 
-list=[2,1,3]
-print(list.sort())
-print(list)
+tup=()
+print(tup)
+print(type(tup))
 
-list=[2,1,3]
-print(list.append(4))
-print(list.sort())
-print(list)
+tup=(1,)
+print(tup)
+print(type(tup))
 
-list=[2,1,3]
-print(list.append(4))
-print(list.sort(reverse=True))
-print(list)
+tup=(1)
+print(tup)
+print(type(tup))
 
-list=["lichi","banana","apple"]
-#print(list.append(4))
-print(list.sort(reverse=True))
-print(list)
+tup=(1.0)
+print(tup)
+print(type(tup))
 
-list=["lichi","banana","apple"]
-#print(list.append(4))
-print(list.sort())
-print(list)
+tup=("hello",)
+print(tup)
+print(type(tup))
 
-list=['a','c','d','e','f','b','j','i','h']
-#print(list.append(4))
-print(list.sort())
-print(list)
+tup=("hello",)
+print(tup)
+print(type(tup))
 
-list=['a','c','d','e','f']
-list.reverse()
-print(list)
+#slicing in tuple
+tup=(1,2,3,4,5)
+print(tup[1:4])
+print(tup[:3])
+print(tup[2:5])
 
-list=[2,1,3]
-list.insert(1,5)
-print(list)
-
-list=[2,1,3,1]
-list.pop(2)
-print(list)
-
-list=[2,1,3,1]
-list.remove(2)
-print(list)
-
-
+#tuple methods
+tup=(1,2,3,4,5,)
+print(tup.index(3))
+print(tup.count(3))
