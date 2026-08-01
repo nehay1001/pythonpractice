@@ -1,18 +1,51 @@
+# list methods
+list=[2,1,3]
+list.append(4)
+print(list)
 
-student=["radhika",45.67,12,"mumbai"]# this onlu in list not in string
-print(student[0])
-student[0]="priyanshi"
-print(student)
+list=[2,1,3]
+print(list.sort())
+print(list)
 
-student==["radhika",45.67,12,"mumbai"]
-print(student[3])
+list=[2,1,3]
+print(list.append(4))
+print(list.sort())
+print(list)
+
+list=[2,1,3]
+print(list.append(4))
+print(list.sort(reverse=True))
+print(list)
+
+list=["lichi","banana","apple"]
+#print(list.append(4))
+print(list.sort(reverse=True))
+print(list)
+
+list=["lichi","banana","apple"]
+#print(list.append(4))
+print(list.sort())
+print(list)
+
+list=['a','c','d','e','f','b','j','i','h']
+#print(list.append(4))
+print(list.sort())
+print(list)
+
+list=['a','c','d','e','f']
+list.reverse()
+print(list)
+
+list=[2,1,3]
+list.insert(1,5)
+print(list)
+
+list=[2,1,3,1]
+list.pop(2)
+print(list)
+
+list=[2,1,3,1]
+list.remove(2)
+print(list)
 
 
-#list slicing
-marks=[45,67,89,90,78,56]
-print(marks[1:5])#1 to 4 index value
-print(marks[1:])#1 to last index value
-print(marks[:5])#0 to 4 index value
-print(marks[:])#0 to last index value
-print(marks[-5:-1])#-5 to -2 index value
-print(marks[-5:-3])#-5 to -4 index value
