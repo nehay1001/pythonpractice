@@ -1,41 +1,55 @@
-#python tuple
-tup=(1,2,3,4,5)# if want to add , is also possible 
-print(type(tup))
-print(tup[0])
-print(tup[2])
-tup[0]=10 #tuple is immutable
+#practice
+#WAP to ask the user to enter a names of their three favourite movie and store them in a list .
+movie1=input("Enter your first favourite movie: ")
+movie2=input("Enter your second favourite movie: ")
+movie3=input("Enter your third favourite movie: ") 
+list=[movie1,movie2,movie3]
+print("your favourite  movies are:",list)
 
-tup=()
-print(tup)
-print(type(tup))
+### OR
+movies=[]
+movie1=input("Enter your first favourite movie: ") #we can also use append in next line.
+movie2=input("Enter your second favourite movie: ")
+movie3=input("Enter your third favourite movie: ") 
 
-tup=(1,)
-print(tup)
-print(type(tup))
+movies.append(movie1)
+movies.append(movie2)
+movies.append(movie3)
+print(movies)
 
-tup=(1)
-print(tup)
-print(type(tup))
 
-tup=(1.0)
-print(tup)
-print(type(tup))
+#WAP to check if list contain a palidrome of element .( hint:use copy () methode)
+list1=[1,2,1]
+list2=[1,2,3]
 
-tup=("hello",)
-print(tup)
-print(type(tup))
+copy_list1=list1.copy()
+copy_list1.reverse()
 
-tup=("hello",)
-print(tup)
-print(type(tup))
+if (copy_list1==list1):
+    print(" palindrome")
+else:
+    print("not palindrome")
 
-#slicing in tuple
-tup=(1,2,3,4,5)
-print(tup[1:4])
-print(tup[:3])
-print(tup[2:5])
 
-#tuple methods
-tup=(1,2,3,4,5,)
-print(tup.index(3))
-print(tup.count(3))
+list1=[1,2,3]
+
+copy_list1=list1.copy()
+copy_list1.reverse()
+
+if (copy_list1==list1):
+    print(" palindrome")
+else:
+    print("not palindrome")
+
+
+
+#WAP to count the number of student with the "A" grade in the following tuple
+grade=("A","B","C","D","A","B","C","D","A")
+print(grade.count("A"))
+
+
+
+#store the above value in list and sort them from "A" to "D"
+list=["A","B","C","D","A","B","C","D","A"]
+list.sort()
+print(list) 
