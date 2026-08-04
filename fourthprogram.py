@@ -1,61 +1,44 @@
-#set in python 
-collection={1,2,3,4}
-print(collection)
-print(type(collection))
+# practice5
+# store following word meaning in python dictonary
+#  (table:"a piece of furniture","list of facts and figure"
+#   cat:"a small animals")
 
-collection={1,2,2,2,"hello","world","world"}
-print(collection)
+dict={ 
+      "table":["a small piece of furniture","list of fact and figure"],
+      "cat" : "a small animals"
+} 
 
-collection={1,2,2,2,"hello","world","world",4}
-print(collection)
-print(len(collection))
+print(dict)
 
-collection={}  #but this is empty dictinory
-print(type(collection))
+# you are giving a list of subject of student .assume one classroom is required for 1 subject,how many classroom are needed by all student.
+# ("python","java","c++","python","javascript","java","python","java","c++","c")
 
-collection=set() #empty set: syntax
-print(type(collection))
+subject={"python","java","c++","python","javascript","java","python","java","c++","c"}
+print(subject)
+print(len (subject))
 
-#set methode
-collection=set()
-collection.add(1)
-collection.add(2)
-collection.add(2)
-collection.add(3)
-collection.add("nehayadav")
-collection.add((1,2,3,))
-print(collection)
-print(len(collection))
 
-collection.remove(1)
-collection.remove(2)
-print(collection)
+# WAP to enter the marks of three subject from the user and store in dictonary .start with an empty dictonary and add one by one .use subject name as a key and marks as value
+marks={}
+x=int(input("enter phy :"))
+marks.update({"phy":x})
 
-collection=set()
-collection.add(1)
-collection.add(2)
-collection.add(2)
-collection.add(3)
-collection.add("nehayadav")
-collection.add((1,2,3,))
+x=int(input("enter maths :"))
+marks.update({"maths":x})
 
-collection.clear()
-print(collection)
-print(len(collection))
+x=int(input("enter chem :"))
+marks.update({"chem":x})
 
-collection={"hello","apnacollege","world","coding","python"}
-print(collection.pop())
-print(collection.pop())
-print(collection.pop())
+print(marks)
 
-set1={1,2,3,}
-set2={2,3,4,}
-print(set1.union(set2)) #{1,2,3,4}
-print(set1)
-print(set2)
 
-set1={1,2,3,}
-set2={2,3,4,}
-print(set1.intersection(set2)) #{2,3}
-print(set1)
-print(set2)
+#figure out a way to store 9 and 9.0 as separate value in the set.(you can take help of built in data type)
+value={9,"9.0"}
+print(value)
+
+value={
+    ("float",9.0),
+    ("int",9)
+}
+
+print(value)
