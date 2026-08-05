@@ -1,79 +1,37 @@
-#loops in python 
-# for loops 
-nums=[1,2,3,4,5]
-for value in nums:
-    print(value)
+# rang
+print(range(5))
 
-veggies=["potato","brinjal","lady finger","cucumber"]
-for value in veggies:
-    print(value) 
+seq=range(5)
+print(seq[0])
+print(seq[1])
+print(seq[2])
+print(seq[3])
+print(seq[4])
 
-tup=(1,2,3,4,5,8,6)
-for nums in tup:
-    print(nums)
+seq=range(5)
+for i in seq:
+    print(i)
 
-str="apnacollege"
-for char in str:
-    print(char)
+seq=range(10)
+for i in seq: 
+ print(i)
 
-str="apnacollege"
-for char in str:
-    print(char)
-else:
-    print("END")
+ for i in range(10):# range(stop)
+    print(i)
 
 
-str="apnacollege"
-for char in str:
-    if(char=='o'):
-        print("o found")
-        break
-    print(char)
-else:
-    print("END")
+for i in range(2,10):# range(star,stop)
+    print(i)
 
+for i in range(2,10,2):# range(star,stop,step)
+ print(i)
 
-str="apnacollege"
-for char in str:
-    if(char=='o'):
-        print("o found")
-        break
-    print(char)
-print("END")
+for i in range(2,100,2):
+    print(i)
 
+for i in range(2,101,2):
+   print(i)
 
-## practice
+for i in range(1,100,2):
+    print(i)
 
-    
-
-#print the elements of the following list using loops.[1,4,9,16,25,36,49,64,81,100]
-
-nums=[1,4,9,16,25,36,49,64,81,100]
-for el in nums :
-    print(el)
-
-
-#search for a number x in this tuple using loop:(1,4,9,16,25,36,49,64,81,100,49)
-nums=(1,4,9,16,25,36,49,64,81,100,49)
-
-x=49
-
-indx=0
-for el in nums:
-    if(el==x):
-        print("numbers found at indx",indx)
-    indx+=1
-
-
-nums=(1,4,9,16,25,36,49,64,81,100,49)
-
-x=49
-
-indx=0
-for el in nums:
-    if(el==x):
-        print("numbers found at indx",indx)
-        break
-    indx+=1
-    
-    
