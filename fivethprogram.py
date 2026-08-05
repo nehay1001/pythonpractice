@@ -1,61 +1,79 @@
-# break and continue in loops
-i=1
-while i<=5:
-    print(i)
-    if(i==3):
+#loops in python 
+# for loops 
+nums=[1,2,3,4,5]
+for value in nums:
+    print(value)
+
+veggies=["potato","brinjal","lady finger","cucumber"]
+for value in veggies:
+    print(value) 
+
+tup=(1,2,3,4,5,8,6)
+for nums in tup:
+    print(nums)
+
+str="apnacollege"
+for char in str:
+    print(char)
+
+str="apnacollege"
+for char in str:
+    print(char)
+else:
+    print("END")
+
+
+str="apnacollege"
+for char in str:
+    if(char=='o'):
+        print("o found")
         break
-    i+=1
-print("end of loops")
-
-nums=(1,4,9,16,25,36,49,64,81,100,36)
-
-x=36
-
-i=0
-while i < len(nums):
-    if(nums[i]==x):
-      print("FOUND at idx",i)
-      break
-    else:
-        print("finding..")
-    i+=1
-
-print ("end of loop")
+    print(char)
+else:
+    print("END")
 
 
-i=1
-while i<=20:
-    print(i)
-    if(i==19):
+str="apnacollege"
+for char in str:
+    if(char=='o'):
+        print("o found")
+        break
+    print(char)
+print("END")
+
+
+## practice
+
     
-      break
-    i+=1
 
- #continue
+#print the elements of the following list using loops.[1,4,9,16,25,36,49,64,81,100]
 
-i=0
-while i <=5 :
-   if(i==3):
-      i+=1
-      continue#skip
-   
-   print(i)
-   i+=1
-
-i=1
-while i <=10 :
-   if(i%2==0):
-      i+=1
-      continue
-   print(i)
-   i+=1
+nums=[1,4,9,16,25,36,49,64,81,100]
+for el in nums :
+    print(el)
 
 
-i=1
-while i <=10 :
-   if(i%2!=0):
-      i+=1
-      continue
-   print(i)
-   i+=1
+#search for a number x in this tuple using loop:(1,4,9,16,25,36,49,64,81,100,49)
+nums=(1,4,9,16,25,36,49,64,81,100,49)
 
+x=49
+
+indx=0
+for el in nums:
+    if(el==x):
+        print("numbers found at indx",indx)
+    indx+=1
+
+
+nums=(1,4,9,16,25,36,49,64,81,100,49)
+
+x=49
+
+indx=0
+for el in nums:
+    if(el==x):
+        print("numbers found at indx",indx)
+        break
+    indx+=1
+    
+    
