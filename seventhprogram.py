@@ -1,7 +1,5 @@
-#with syntax
-with open("demo.txt","r") as f:
-    data=f.read()
-    print(data)
+#deleting a file
+import os
+#import tensorflow #error
 
-with open("demo,txt","w")as f:
- f.write("neha yadav")
+os.remove("samp.txt")
