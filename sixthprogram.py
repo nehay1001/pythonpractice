@@ -1,170 +1,93 @@
-#function in python
-def calc_sum(a,b):
-    sum=a+b
-    print(sum)
-    return sum
-calc_sum(4,8)
+# recursion in python
+def show(n):
+    print(n)
+show(7)
 
-def calc_sum(a,b):
-   return a+b
-sum=calc_sum(3,4)
+def show(n):
+    print(n)
+show(6)
+
+def show(n):
+    print(n)
+show(5) #5=n,4=n-1,3=n-2,2=n-3,1=n-4
+
+
+# recursive function
+def show(n):
+    if(n==0):
+        return
+    print(n)
+    show(n-1)
+show(5) 
+
+def show (n):
+    if (n==-1):
+        return
+    print(n)
+    show(n-1)
+show(5)
+
+def show(n):
+    if(n==0):         # values put here a=123
+        return
+    print(n)
+    show(n-1)
+    print("end")
+show(3) 
+
+
+def fact(n):
+    if(n==1 or n==0):
+        return 1 
+    return fact(n-1) *n
+print (fact(2))
+
+
+def fact(n):
+    if(n==1 or n==0):
+        return 1 
+    return fact(n-1) *n
+print (fact(3))
+
+def fact(n):
+    if(n==1 or n==0):
+        return 1 
+    return fact(n-1) *n
+print (fact(4))
+
+
+def fact(n):
+    if(n==1 or n==0):
+        return 1 
+    return fact(n-1) *n
+print (fact(5))
+
+
+# lest practice
+# write a recursive function to calculate the sum of the first n natural numbers.
+def cal_sum(n):
+    if(n==0):
+        return 0
+    return cal_sum(n-1)+n
+sum=cal_sum(5)
 print(sum)
 
-def calc_diff(a,b,):
-    diff=a-b
-    print(diff)
-calc_diff(9,5,)
 
-def calc_multi (a,b):
-    return a*b
-multi=calc_multi(4,4)
-print(multi)
-
-def cal_div(a,b):
-    div=a/b
-    print(div)
-cal_div(5,2)
-
-def cal_mod(a,b):
-    return a%b
-mod=cal_mod(4,4)
-print(mod)
-
-def cal_pow(a,b):
-    return a**b
-pow=cal_pow(5,2)
-print(pow)
+def cal_sum(n):
+    if(n==0):
+        return 0
+    return cal_sum(n-1)+n
+sum=cal_sum(10)
+print(sum)
 
 
-def print_hello():
-        print("hello")
-print_hello()
-print_hello()
-print_hello()
-print_hello()
-print_hello()
+# write a recursive function to print all elements in list.
+#hint: use list and index as parameter
+def print_list(list,idx=0):
+    if(idx==len(list)):
+        return
+    print(list[idx])
+    print_list(list,idx+1)
 
-
-print_hello()
-print("hello")
-
-output=print_hello()
-print(output) ## none
-
-def print_neha():
-    print("neha")
-print_neha()
-
-#avarage of 3 function
-def calc_avg(a,b,c):
-    sum=a+b+c
-    avg=sum/3
-    print(avg)
-    return avg
-
-calc_avg (1,2,3)
-
-def calc_avg(a,b,c):
-    sum=a+b+c
-    avg=sum/3
-    print(avg)
-    return avg
-
-calc_avg (98,97,95)
-
-
-#buil in function #1.print() 2.len()  3.type()  4.range()
-
-print("helloworld","nehayadav") #sep=""
-print("helloworld") #sep=""
-print("nehayadav") #end="\n"
-
-print("helloworld",end="")
-print("nehayadav")
-
-print("helloworld",end="$")
-print("nehayadav")
-
-# defalt parameter
-
-def calc_multi(a=4,b=2):
-    print(a*b)
-    return a*b
-
-calc_multi()
-
-def calc_multi(a,b=2): #first use non defalt then defalt
-    print(a*b)
-    return a*b
-
-calc_multi(4)
-
-
-#WAF to print the length of list.( list is the parameter )
-
-cities=["mumbai","andheri","malad","bandra","marol","pune","delhi"]
-heroes=["batman","thor","captain america","saktiman","'spiderman"]
-
-def print_len(list):
-    print(len(list))
-
-print_len(cities)
-print_len(heroes)
-
-
-# WAF to print the element of a list in a single line.( list is the parameter)
-
-cities=["mumbai","andheri","malad","bandra","marol","pune","delhi"]
-heroes=["batman","thor","captain america","saktiman","'spiderman"]
-
-print(heroes[0], end=" ")
-print(heroes[1], end=" ")
-
-def print_len(list):
-    print(len(list))
-
-print_len(cities)
-print_len(heroes)
-
-cities=["mumbai","andheri","malad","bandra","marol","pune","delhi"]
-heroes=["batman","thor","captain america","saktiman","'spiderman"]
-
-def print_len(list):
-    print(len(list))
-
-def print_list(list):
-    for item in list:
-        print(item,end=" ")
-
-print_list(heroes)
-print()
-print_list(cities)
-print()
-
-
-
-#WAP to find the factorial of n.(n is the parameter).
-n=5
-fact=1
-for i in range(1,n+1):
-    fact*=i 
-print(fact) #this is we read in loops 
-
-def cal_fact(n):
-    fact=1
-    for i in range(1,n+1):
-     fact*=i 
-    print(fact) 
-
-cal_fact(5)
-cal_fact(4)
-
-
-#WAF to convert USD to INR
-def converter(usd_val):
-    inr_val=usd_val*83
-    print(usd_val,"USD =" ,inr_val,"INR")
-
-converter(1)
-converter(100)
-converter(73)
+fruits=["mango","lichi","apple","banana"]
+print_list(fruits)
