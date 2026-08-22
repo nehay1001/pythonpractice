@@ -1,55 +1,56 @@
-# class method
-class Person:
-    name="anonymous"
+# property
 
-    def changeName(self,name):
-        self.name=name
+class Student:
+    def __init__(self,phy,chem,maths):
+        self.phy=phy
+        self.chem=chem
+        self.maths=maths
+        self.percentage=str((self.phy+self.chem+self.maths) / 3) + "%"
 
-p1=Person()
-p1.changeName("neha yadav")
-print(p1.name)
-print(Person.name)
+stu1= Student(98,97,99)
+print(stu1.percentage)
 
-
-
-class Person:
-    name="anonymous"
-
-    def changeName(self,name):
-        Person.name=name
-
-p1=Person()
-p1.changeName("neha yadav")
-print(p1.name)
-print(Person.name)
+stu1.phy= 86
+print(stu1.phy)
+print(stu1.percentage)
 
 
+class Student:
+    def __init__(self,phy,chem,maths):
+        self.phy=phy
+        self.chem=chem
+        self.maths=maths
+        self.percentage=str((self.phy+self.chem+self.maths) / 3) + "%"
 
+    def calcPercentage(self):
+        self.percentage=str((self.phy+self.chem+self.maths) / 3) + "%"
 
-class Person:
-    name="anonymous"
+stu1= Student(98,97,99)
+print(stu1.percentage)
 
-    def changeName(self,name):
-        self.__class__.name="neha"
-
-p1=Person()
-p1.changeName("neha yadav")
-print(p1.name)
-print(Person.name)
+stu1.phy= 86
+print(stu1.phy)
+stu1.calcPercentage()
+print(stu1.percentage)
 
 
 
-class Person:
-    name="anonymous"
+class Student:
+    def __init__(self,phy,chem,maths):
+        self.phy=phy
+        self.chem=chem
+        self.maths=maths
 
-    #def changeName(self,name):
-        #self.__class__.name="neha"
+    #def calcPercentage(self):
+        #self.percentage=str((self.phy+self.chem+self.maths) / 3) + "%"
 
-    @ classmethod
-    def changeName(cls,name):
-        cls.name=name
+    @property
+    def percentage(self):
+         return str((self.phy+self.chem+self.maths) / 3) + "%"
 
-p1=Person()
-p1.changeName("neha yadav")
-print(p1.name)
-print(Person.name)
+
+stu1= Student(98,97,99)
+print(stu1.percentage)
+
+stu1.phy= 86
+print(stu1.percentage)
