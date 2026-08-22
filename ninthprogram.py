@@ -1,59 +1,136 @@
-class Account:                               #for public
-    def __init__ (self,acc_no,acc_pass):   
-        self.acc_no=acc_no
-        self.acc_pass=acc_pass
+# inheritance
+class Car:
 
-acc1=Account("12345","abcde")
-print(acc1.acc_no)
-print(acc1.acc_pass)
+    @staticmethod
+    def start():
+        print("car started..")
 
-#class Account:                               #for private 
-    #def __init__ (self,acc_no,acc_pass):
-        #self.acc_no=acc_no
-        #self.__acc_pass=acc_pass
+    @staticmethod
+    def stop():
+        print("car stoped..")
 
-#acc1=Account("12345","abcde")
-#print(acc1.acc_no)
-#print(acc1.__acc_pass)                       # give error
+class ToyotaCar(Car):
+    def __init__(self,name):
+        self.name=name
 
-class Account:                               #for private 
-    def __init__ (self,acc_no,acc_pass):
-        self.acc_no=acc_no
-        self.__acc_pass=acc_pass
+car1=ToyotaCar("fortuner")
+car2=ToyotaCar("prius")
 
-    def reset_pass(self):
-        print(acc1.__acc_pass)
+print(car1.name)
 
-acc1=Account("12345","abcde")
-
-print(acc1.acc_no)
-print(acc1.reset_pass())
+print(car1.start())              
 
 
-#class Person:                       # its private (__) that's why give error
-   # __name="anonymous"
-#p1=Person()
-#print(p1.__name)
+class Car:
+
+    color="black"
+
+    @staticmethod
+    def start():
+        print("car started..")
+
+    @staticmethod
+    def stop():
+        print("car stoped..")
+
+class ToyotaCar(Car):
+    def __init__(self,name):
+        self.name=name
+
+car1=ToyotaCar("fortuner")
+car2=ToyotaCar("prius")
+
+print(car1.color)
 
 
-#class Person:                       # its private (__)that's why give error
-    #__name="anonymous"
 
-    #def __hello():
-       # print("hello person!")
 
-#p1=Person()
-#print(p1.__hello())
+class Car:
 
-class Person:                       
-    __name="anonymous"
+    @staticmethod
+    def start():
+        print("car started..")
 
-    def __hello(self):
-       print("hello person!")
+    @staticmethod
+    def stop():
+        print("car stoped..")
 
-    def welcome(self):
-        self.__hello()
+class ToyotaCar(Car):
+    def __init__(self,brand):
+        self.brand=brand
 
-p1=Person()
-print(p1.welcome())
+class Fortuner (ToyotaCar):
+    def __init__(self,type):
+        self.type=type
+
+car1=Fortuner("diesel")
+car1.start()
+
+
+
+class A:
+    varA="welcome to class A"
+
+class B:
+    varB="welcome to class B"
+
+class C(A,B):
+    varC="welcome to class C"
+
+c1=C()
+
+print(c1.varC)
+print(c1.varB)
+print(c1.varA)
+
+
+
+class Car:
+
+    def __init__(self,type):
+            self.type=type
+
+    @staticmethod
+    def start():
+        print("car started..")
+
+    @staticmethod
+    def stop():
+        print("car stoped..")
+
+class ToyotaCar(Car):
+    def __init__(self,name,type):
+        self.name=name
+        super(). __init__(type)
+
+car1=ToyotaCar("prius","electric")
+print(car1.type)
+
+
+
+
+class Car:
+
+    def __init__(self,type):
+            self.type=type
+
+    @staticmethod
+    def start():
+        print("car started..")
+
+    @staticmethod
+    def stop():
+        print("car stoped..")
+
+class ToyotaCar(Car):
+    def __init__(self,name,type):
+        super(). __init__(type)
+        self.name=name
+        super().start()
+
+car1=ToyotaCar("prius","electric")
+print(car1.type)
+
+
+
 
