@@ -1,56 +1,106 @@
-# property
+# pollymorphism
 
-class Student:
-    def __init__(self,phy,chem,maths):
-        self.phy=phy
-        self.chem=chem
-        self.maths=maths
-        self.percentage=str((self.phy+self.chem+self.maths) / 3) + "%"
+#print( 1 + 2 ) #3
+#print(type(1))
 
-stu1= Student(98,97,99)
-print(stu1.percentage)
+#print("apna"+"college") #concatenate
+#print(type("apna"))
 
-stu1.phy= 86
-print(stu1.phy)
-print(stu1.percentage)
+#print([1,2,3]+[4,5,6]) #merge
+#print(type ([1,2,3]) )
 
+class Complex:
+    def __init__(self,real,img):
+        self.real=real
+        self.img=img
 
-class Student:
-    def __init__(self,phy,chem,maths):
-        self.phy=phy
-        self.chem=chem
-        self.maths=maths
-        self.percentage=str((self.phy+self.chem+self.maths) / 3) + "%"
+    def showNumber(self):
+        print(self.real,"i+",self.img,"j")
 
-    def calcPercentage(self):
-        self.percentage=str((self.phy+self.chem+self.maths) / 3) + "%"
+num1=Complex(1,3)
+num1.showNumber()
 
-stu1= Student(98,97,99)
-print(stu1.percentage)
-
-stu1.phy= 86
-print(stu1.phy)
-stu1.calcPercentage()
-print(stu1.percentage)
+num2=Complex(4,6)
+num2.showNumber()
 
 
 
-class Student:
-    def __init__(self,phy,chem,maths):
-        self.phy=phy
-        self.chem=chem
-        self.maths=maths
 
-    #def calcPercentage(self):
-        #self.percentage=str((self.phy+self.chem+self.maths) / 3) + "%"
+class Complex:
+    def __init__(self,real,img):
+        self.real=real
+        self.img=img
 
-    @property
-    def percentage(self):
-         return str((self.phy+self.chem+self.maths) / 3) + "%"
+    def showNumber(self):
+        print(self.real,"i+",self.img,"j")
+
+    def add(self,num2):
+        newReal=self.real + num2.real
+        newImg=self.img + num2.img
+        return Complex(newReal,newImg)
+
+num1=Complex(1,3)
+num1.showNumber()
+
+num2=Complex(4,6)
+num2.showNumber()
+
+num3=num1 .add(num2)
+num3.showNumber()
 
 
-stu1= Student(98,97,99)
-print(stu1.percentage)
 
-stu1.phy= 86
-print(stu1.percentage)
+
+
+class Complex:
+    def __init__(self,real,img):
+        self.real=real
+        self.img=img
+
+    def showNumber(self):
+        print(self.real,"i+",self.img,"j")
+
+    def __add__(self,num2):
+        newReal=self.real + num2.real
+        newImg=self.img + num2.img
+        return Complex(newReal,newImg)
+
+num1=Complex(1,3)
+num1.showNumber()
+
+num2=Complex(4,6)
+num2.showNumber()
+
+num3=num1 + num2
+num3.showNumber()
+
+
+
+
+
+class Complex:
+    def __init__(self,real,img):
+        self.real=real
+        self.img=img
+
+    def showNumber(self):
+        print(self.real,"i+",self.img,"j")
+
+    def __add__(self,num2):
+        newReal=self.real + num2.real
+        newImg=self.img + num2.img
+        return Complex(newReal,newImg)
+
+    def __sub__(self,num2):
+            newReal=self.real - num2.real
+            newImg=self.img - num2.img
+            return Complex(newReal,newImg)
+
+num1=Complex(1,3)
+num1.showNumber()
+
+num2=Complex(4,6)
+num2.showNumber()
+
+num3=num1 - num2
+num3.showNumber()
